@@ -1,0 +1,141 @@
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:sans-serif;
+}
+body{
+    width:100%;
+    height:100vh;
+    background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3)),url(log.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.formiulaira{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    background:linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5));
+    border: 1px solid #ffffff;
+    padding:30px;
+    border-radius:7px;
+    width:400px;
+    
+    
+    
+    
+}
+form{
+    height:100%
+}
+.formiulaira form h2{
+    text-align : center;
+    color:#ffffff;
+    font-size:6vmin;
+    font-weight:700;
+    text-transform: capitalize;
+    margin:10px 0 45px;
+}
+.email input{
+    border: none;
+    outline: none;
+    background: transparent;
+    width:100%;
+    height: 30px;
+    color:#ffffff;
+    font-size:18px;
+    
+    
+}
+.email{
+    position: relative;
+     border-bottom:2px solid #ffffff;
+     width:100%;
+     margin: 40px 0;
+     position: relative;
+}
+
+span{
+    position:absolute;
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+    color:#ffffff;
+    pointer-events: none;
+    font-size: 18px;
+    transition: 0.3s ease;
+    
+}
+.email input:focus~span,
+ .email input:valid~span
+
+ {
+    transform: translateY(-30px);
+    font-size: 14px;
+    top:5px;
+}
+
+.btn{
+    color:#000000;
+    text-transform: capitalize;
+    text-align: center;
+    background: #ffffff;
+    margin:30px 0 35px;
+    width:100%;
+    border: 2px solid #ffffff;
+    outline: none;
+    padding:5px 0 5px;
+    font-size:18px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.btn:hover{
+    background: transparent;
+    color:#ffffff;
+}
+.forget{
+    position: absolute;
+    right: 25px;
+    color:#ffffff
+}
+.forget:hover{
+    border-bottom: 2px solid #ffffff;
+}
+label{
+    color:#ffffff
+}
+.registere{
+    text-align: center;
+    font-size:2.5vmin;
+    color:#ffffff;
+    margin: 0 0 20px;
+    
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media(max-width:700px){
+   .formiulaira{
+       width: 90%;
+       padding: 40px;
+       border-radius: 5px;
+     }
+   .forget{
+       font-size:3.9vmin;
+  }
+    label{
+        font-size: 3.9vmin;
+    }
+    .registere{
+        font-size: 3.9vmin
+    }
+    .formiulaira form h2{
+        font-size:8vmin;
+    }
+    
+}
